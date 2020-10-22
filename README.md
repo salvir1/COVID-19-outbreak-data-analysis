@@ -65,14 +65,17 @@ Spring outbreak
 - Occurred primarily in the northeast, Michigan, and Louisiana
 - Exceeded 40 cases per 100,000 per day or 0.8 deaths per 100,000 per day before May
 - About 80M people are in this group
+
 Summer outbreak
 - Occurred primarily in the southeast and Arizona
 - Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day between June and August
 - About 80M people are in this group
+
 Fall outbreak
 - Upper midwest and Arkansas at this time with more states to be added if they meet the threshholds
 - Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day after August
 - About 11M people are in this group
+
 No outbreak
 - Avoided classification in one of the other outbreak categories
 - About 160M people are in this group
