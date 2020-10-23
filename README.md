@@ -15,12 +15,12 @@ The goals of this project are:
 - To work with various EDA and data visualization tools and techniques
 
 ## Tools and techniques used in this project
-- **Tools**
-> - Python, Jupyter Lab, SciKitLearn, Pandas, Numpy
-- **Visualization**
-> - Plotly, Matplotlib
-- **Techniques**
-> - Supervised learning model development, spatial mapping, simple moving average
+**Tools**
+- Python, Jupyter Lab, SciKitLearn, Pandas, Numpy
+**Visualization**
+- Plotly, Matplotlib
+**Techniques**
+- Supervised learning model development, spatial mapping, simple moving average
 
 ## COVID-19 trend analysis
 
