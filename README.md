@@ -3,7 +3,7 @@
 <img align="right" src="img/COVID-cases-by-outbreak-groupings.png" width='500' height='auto' ></img>
 
 ## Overview
-This project is an attempt to characterize the difference between an uptick and an outbreak in COVID case rates. This exercise is made difficult by the lack of good statistical measures of COVID-19 case rates. Part of the project explores the shortcomings with the measures that are currently available. Nevertheless, statistics are derived which could become the foundation of a new regional COVID-19 case prevalence testing program. This program is described in more detail [here](https://github.com/salvir1/covid-early-warning-system). 
+This project is an attempt to characterize the difference between an uptick and an outbreak in COVID case rates. This exercise is made difficult by the lack of good statistical measures of COVID-19 case rates. Part of the project explores the shortcomings with the measures that are currently available. Nevertheless, statistics are derived which could become the foundation of an alternative regional COVID-19 early warning case prevalence testing program. This program is described in more detail [here](https://github.com/salvir1/covid-early-warning-system). 
 
 This is an ongoing project. The ideas and reasearch in this repo are a work in process. New information will be added soon. 
 
@@ -15,10 +15,13 @@ The goals of this project are:
 - To work with various EDA and data visualization tools and techniques
 
 ## Tools and techniques used in this project
+
 **Tools**
 - Python, Jupyter Lab, SciKitLearn, Pandas, Numpy
+
 **Visualization**
 - Plotly, Matplotlib
+
 **Techniques**
 - Supervised learning model development, spatial mapping, simple moving average
 
