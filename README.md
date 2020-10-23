@@ -24,27 +24,13 @@ The goals of this project are:
 ## COVID-19 trend analysis
 
 ### Data and EDA
-Data for the COVID-19 trend analysis was obtained from the following sources:
+Data for the COVID-19 trend analysis was obtained from the following source:
 - [the COVID Tracking Project](https://www.covidtrackingproject.com), Creative Commons CC BY 4.0 license
-- Jones, Sarah P., Imperial College London Big Data Analytical Unit and YouGov Plc. 2020, Imperial College London YouGov Covid Data Hub, v1.0, YouGov Plc, April 2020
-For the US data, state groupings were created for outbreaks of similar scale and timeframe. States were grouped into one of four categories:
-- Spring outbreak
-> - Occurred primarily in the northeast, Michigan, and Louisiana
-> - Exceeded 40 cases per 100,000 per day or 0.8 deaths per 100,000 per day before May
-> - About 80M people are in this group
-- Summer outbreak
-> - Occurred primarily in the southeast and Arizona
-> - Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day between June and August
-> - About 80M people are in this group
-- Fall outbreak
-> - Upper midwest and Arkansas at this time with more states to be added if they meet the threshholds
-> - Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day after August
-> - About 11M people are in this group
-- No outbreak
-> - Avoided classification in one of the other outbreak categories
-> - About 160M people are in this group
+
+For the US data, state groupings were created for outbreaks of similar scale and timeframe. States were grouped into one of four categories: spring outbreak, summer outbreak, fall outbreak, and no outbreak. Information about these groupings can be found later in the repo.
 
 Case and death data was smoothed using a 14 day simple moving average since the daily reports are quite noisy.
+
 ### Findings and comments
 
 <img align="center" src="img/COVID-cases-by-outbreak-groupings.png" width='1000' height='auto' ></img>
@@ -72,6 +58,27 @@ What are the takeaways from this chart?
 
 > - The case fatality ratio has been reduced significantly from the early days of the pandemic. This can probably be attributed to several factors. For one, much more testing is being done, so fewer cases are being missed. For two, the medical community knows much more about how to care for patients with the disease, which has probably led to better outcomes. 
 > - The case fatality ratio crept up a bit for the summer outbreak group, but otherwise hasn't seen marked changes after spring ended. There's no strong indication that summer's crowded hospitals had a major impact on case fatality--at least in this slice of the data.
+
+### State groupings
+
+Spring outbreak
+- Occurred primarily in the northeast, Michigan, and Louisiana
+- Exceeded 40 cases per 100,000 per day or 0.8 deaths per 100,000 per day before May
+- About 80M people are in this group
+
+Summer outbreak
+- Occurred primarily in the southeast and Arizona
+- Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day between June and August
+- About 80M people are in this group
+
+Fall outbreak
+- Upper midwest and Arkansas at this time with more states to be added if they meet the threshholds
+- Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day after August
+- About 11M people are in this group
+
+No outbreak
+- Avoided classification in one of the other outbreak categories
+- About 160M people are in this group
 
 ### Areas for further study
 
