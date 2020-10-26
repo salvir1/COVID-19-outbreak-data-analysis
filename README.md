@@ -1,6 +1,6 @@
 # COVID-19 trend analysis. Is it an outbreak or an uptick?
 
-<img align="right" src="img/COVID-cases-by-outbreak-groupings.png" width='500' height='auto' ></img>
+<img align="right" src="img/COVID-deaths-by-outbreak-groupings.png" width='500' height='auto' ></img>
 
 ## COVID Early Warning System Project Overview
 This project is an attempt to identify a good early warning indicator of an outbreak in COVID case rates. The first part of this project is to analyze the utility  of current statistical measures of COVID-19 cases including total cases, case rates, and positive test rates. These statistical measures are analyzed at both the state level and at the level of groupings of states.
@@ -40,7 +40,7 @@ The goals of this project are:
 
 ### A meaningful grouping of outbreaks
 
-Four state grouping categories were created based upon season and severity of an outbreak in terms of daily deaths reported per 100,000. An outbreak was defined by a daily death rate exceeding 0.25 per 100,000 population. Outbreaks for the spring, summer, and fall began prior to 4/1/20, 7/1/20, and 10/1/20 respectively.
+Four state grouping categories were created based upon season and severity of an outbreak in terms of daily deaths reported per 100,000. An outbreak was defined at the state level according to criteria desribed later in this report. When rolled up to the state grouping level, the daily death rate exceeded 0.25 per 100,000 population for an outbreak. Outbreaks for the spring, summer, and fall began prior to 4/1/20, 7/1/20, and 10/1/20 respectively.
 
 Governments and public health agencies are unlikely to drive the death rate down to zero until a vaccine is available, but they can work to avoid an outbreak to avoid the associated costs of lives lost.
 
@@ -112,23 +112,23 @@ Two animations show the upticks and animations of the outbreaks over time. Due t
 ### State groupings
 
 Spring outbreak
-- Occurred primarily in the northeast, Michigan, and Louisiana
-- Exceeded 40 cases per 100,000 per day or 0.8 deaths per 100,000 per day before May
-- About 80M people are in this group
+- Occurred primarily in the northeast, Great Lakes region, and Louisiana
+- Exceeded 0.8 deaths per 100,000 per day between June and August
+- About 90M people are in this group
 
 Summer outbreak
 - Occurred primarily in the southeast and Arizona
 - Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day between June and August
-- About 80M people are in this group
+- About 89M people are in this group
 
 Fall outbreak
 - Upper midwest and Arkansas at this time with more states to be added if they meet the threshholds
 - Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day after August
-- About 11M people are in this group
+- About 16M people are in this group
 
 No outbreak
 - Avoided classification in one of the other outbreak categories
-- About 160M people are in this group
+- About 133M people are in this group
 
 ### Areas for further study
 
