@@ -25,20 +25,13 @@ The goals of this project are:
 **Techniques**
 - Spatial mapping, simple moving average, simulation
 
-## Survey data of COVID case fatality rate by state grouping
+## Raw data sourced from COVID Tracking Project
 
-- Raw data sourced from COVID Tracking Project
-
-### Terms of use
-
-- The COVID Tracking Project at The Atlantic’s data and website content is published under a Creative Commons CC BY 4.0 license, which requires users to attribute the source and license type (CC BY 4.0) when sharing our data or website content.
-
-### Citation
-
-- [the COVID Tracking Project](https://www.covidtrackingproject.com), Creative Commons CC BY 4.0 license
+- Terms of use: The COVID Tracking Project at The Atlantic’s data and website content is published under a Creative Commons CC BY 4.0 license, which requires users to attribute the source and license type (CC BY 4.0) when sharing our data or website content.
+- Citation: [the COVID Tracking Project](https://www.covidtrackingproject.com), Creative Commons CC BY 4.0 license
 
 
-### A meaningful grouping of outbreaks
+## A meaningful grouping of outbreaks
 
 As COVID was becoming entrenched throughout nearly every corner of the country this year, clearly identifiable outbreaks occurred in many states, while other states were able to avoid them. These outbreaks were costly in terms of lives lost. Governments and public health agencies are unlikely to drive the death rate down to zero until a vaccine is available, but they can work to avoid an outbreak to avoid the associated costs of lives lost.
 
@@ -79,7 +72,7 @@ The chart of *total cases diagnosed per day* wasn't as clean of an indicator of 
 
 The *positive test rate* chart provides a signal that correlates with the deaths chart, but it isn't as pronounced as the case rate trendline. Also, this signal appears more noisy than the others. 
 
-#### A note about noise
+### A note about noise
 
 All three of these measures suffer from enough noise that they are generally reported with a moving average (7-day, 14-day, and occasionally 28-day) in order to see the underlying trend. The charts in this study all utilize a 14-day simple moving average (SMA). The source of much of this noise is the same for all indicators, although it doesn't affect the three indicators equally. The source of the noise comes from the way that COVID testing data is collected. The COVID test sites in a jurisdiction are often testing for different reasons which can cause them to see very different rates of symptomatic and asymptomatic people. Some test sites include mostly asymptomatic people with very low positive test rates (being tested for work or for school, or for screening prior to medical procedures). Other test sites test mostly symptomatic people and have very high positive test rates. At some test sites the ratio between symptomatic and asymptomatic people can vary from day-to-day. The weighting of the test sites can fluctuate significantly from day-to-day in a batched report. Consequently, the ratio of symptomatic to asymptomatic people in a batched daily test report for a state can--and does--vary tremendously. Clearly this has the biggest impact on the positive test rate signal which impedes its use as an early warning indicator. That noise also impacts the others, which can be seen in the final chart of 
 case rate in this section.
@@ -90,7 +83,7 @@ Another source of noise in all of these signals is the changing testing landscap
 
 The noisiness of all of these signals is a major impediment to early detection. Given the infectiousness of COVID, an uptick can quickly turn into an outbreak. It is already challenging for governments and public health agencies to keep COVID in check. The noise in these signals adds costly delay. More about this can be found in the discussion on COVID surveillance systems [here](https://github.com/salvir1/covid-early-warning-system).
 
-#### SIDEBAR: Case fatality ratio
+### SIDEBAR: Case fatality ratio
 
 <img align="center" src="img/COVID-case-fatality-by-outbreak-groupings.png" width='1000' height='auto' ></img>
 
@@ -100,7 +93,7 @@ What are the takeaways from this chart?
 - The case fatality ratio has been reduced significantly from the early days of the pandemic. This can probably be attributed to several factors. For one, much more testing is being done, so fewer cases are being missed. For two, the medical community knows much more about how to care for patients with the disease, which has probably led to better outcomes. 
 - The case fatality ratio crept up a bit for the summer outbreak group, but otherwise hasn't seen marked changes after spring ended. There's no strong indication that summer's crowded hospitals had a major impact on case fatality--at least in this slice of the data.
 
-### Map animation of the upticks and outbreaks
+## Map animation of the upticks and outbreaks
 
 Two animations show the upticks and animations of the outbreaks over time. Due to the limitations of the Github repo, you may need to copy the html files to a local folder and then open them to see the animation. Links to the files are here. They can be found in the img directory of this repo.
 
@@ -109,7 +102,7 @@ Two animations show the upticks and animations of the outbreaks over time. Due t
 [death rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/death-rate-map.html)
 
 
-### State groupings
+## State groupings
 
 Spring outbreak
 - Occurred primarily in the northeast, Great Lakes region, and Louisiana
@@ -130,10 +123,10 @@ No outbreak
 - Avoided classification in one of the other outbreak categories
 - About 133M people are in this group
 
-### Areas for further study
+## Areas for further study
 
-- Describe and then model an *early warning system* that could identify when the infection rate for a region such as a state is threatening to become an outbreak.
-- Analyze data from other regions of the world that have seen outbreaks with similar timing such as Europe.
+- This analysis informed the development and simulation of an early warning system based on randomized sampling of a subset of a population of people for pre-symptomatic COVID infection. This proposed early warning system is described in more detail [here](https://github.com/salvir1/covid-early-warning-system). 
+- Another further area of study would be to extend this analysis to other geographic regions outside of the US such as Europe.
 
 ## Contributors
 [Rob Salvino](https://github.com/salvir1)
