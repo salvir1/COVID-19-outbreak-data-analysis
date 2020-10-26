@@ -5,7 +5,7 @@
 ## COVID Early Warning System Project Overview
 This project is an attempt to identify a good early warning indicator of an outbreak in COVID case rates. The first part of this project is to analyze the utility  of current statistical measures of COVID-19 cases including total cases, case rates, and positive test rates. These statistical measures are analyzed at both the state level and at the level of groupings of states.
 
-Part of the project also explores the shortcomings with the measures that are currently available. Taken together, this analysis helps to inform the concept of an alternative regional COVID-19 early warning system that addresses some of the shortcomings of the currently available tools. This system is described in more detail [here](https://github.com/salvir1/covid-early-warning-system). 
+Part of the project also explores the shortcomings with the measures that are currently available. Taken together, this analysis helps to inform the concept of an alternative regional COVID-19 early warning system that addresses some of the shortcomings of the currently available tools. This proposed early warning system is described in more detail [here](https://github.com/salvir1/covid-early-warning-system). 
 
 ## Goals
 
