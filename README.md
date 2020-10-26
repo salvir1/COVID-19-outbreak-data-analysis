@@ -3,61 +3,75 @@
 <img align="right" src="img/COVID-cases-by-outbreak-groupings.png" width='500' height='auto' ></img>
 
 ## Overview
-This repo is an ongoing project to explore the geographic patterns over time in the COVID-19 pandemic. The goal is to identify meaningful observations that could potentially be used by entities that are seeking to control and/or respond to the crisis.
+This project is an attempt to characterize the difference between an uptick and an outbreak in COVID case rates. This exercise is made difficult by the lack of good statistical measures of COVID-19 case rates. Part of the project explores the shortcomings with the measures that are currently available. Nevertheless, statistics are derived which could become the foundation of an alternative regional COVID-19 early warning case prevalence testing program. This program is described in more detail [here](https://github.com/salvir1/covid-early-warning-system). 
 
-This is an ongoing project. New information will be added soon. Please recognize that the ideas and reasearch in this repo are a work in process.
+This is an ongoing project. The ideas and reasearch in this repo are a work in process. New information will be added soon. 
 
 ## Goals
 
 The goals of this project are:
-> - To look for meaningful patterns in the geogrpahic progression over time of the COVID-19 pandemic
-> - To work with various EDA and data visualization tools and techniques
+- To characterize the difference at the regional level between an uptick and an outbreak in COVID case rates
+- To develop statistics that could become the foundation of a COVID-19 earling warning system (described [here](https://github.com/salvir1/covid-early-warning-system))
+- To work with various EDA and data visualization tools and techniques
 
 ## Tools and techniques used in this project
-- **Tools**
-> - Python, Jupyter Lab, SciKitLearn, Pandas, Numpy
-- **Visualization**
-> - Plotly, Matplotlib
-- **Techniques**
-> - Supervised learning model development, spatial mapping, simple moving average
+
+**Tools**
+- Python, Jupyter Lab, SciKitLearn, Pandas, Numpy
+
+**Visualization**
+- Plotly, Matplotlib
+
+**Techniques**
+- Supervised learning model development, spatial mapping, simple moving average
 
 ## COVID-19 trend analysis
 
-### Data and EDA
+### Data
 Data for the COVID-19 trend analysis was obtained from the following source:
 - [the COVID Tracking Project](https://www.covidtrackingproject.com), Creative Commons CC BY 4.0 license
 
-For the US data, state groupings were created for outbreaks of similar scale and timeframe. States were grouped into one of four categories: spring outbreak, summer outbreak, fall outbreak, and no outbreak. Information about these groupings can be found later in the repo.
-
 Case and death data was smoothed using a 14 day simple moving average since the daily reports are quite noisy.
 
-### Findings and comments
+### A meaningful grouping of outbreaks
+
+For the US data, state groupings were created for outbreaks of similar scale and timeframe. States were grouped into one of four categories: spring outbreak, summer outbreak, fall outbreak, and no outbreak. Information about these groupings can be found later in the repo. As is described below, these groupings proved to be meaningful--they correspond to clear differences in deaths per 100,000 people. Various views were made of these groupings to try to identify the most useful ways to look at the data that is collected and published by state public health agencies.
 
 <img align="center" src="img/COVID-cases-by-outbreak-groupings.png" width='1000' height='auto' ></img>
 
 This chart reveals a number of interesting patterns.
 
-> - While the *spring outbreak* was occurring, the infection rate was surprisingly uniform among the other groups.
-> - The *summer outbreak* emerged quickly. The *fall outbreak* group and *no outbreak* group maintained comparable infection rates even as the the rates crept up (perhaps due to states easing restrictions en masse). The reported infection rate for the *summer outbreak* group suprassed that of the *spring outbreak*. This could be explained in part by increased testing.
-> - The *fall outbreak* ramped up quickly as well. It appears to be headed towards a higher peak than either of the two previous outbreaks. Fortunately, this outbreak is affecting a much smaller portion of the US population than the previous two at this time.
-> - The rapid ramp-ups of the summer and fall outbreaks suggest an early warning system may be necessary to *see* an emerging outbreak before its too late. By the time the trends start to change in the case rate data it may be too late to avoid an outbreak. 
+- While the *spring outbreak* was occurring, the infection rate was surprisingly uniform among the other groups.
+- The *summer outbreak* emerged quickly. The *fall outbreak* group and *no outbreak* group maintained comparable infection rates even as the the rates crept up (perhaps due to states easing restrictions en masse). The reported infection rate for the *summer outbreak* group suprassed that of the *spring outbreak*. This could be explained in part by increased testing.
+- The *fall outbreak* ramped up quickly as well. It appears to be headed towards a higher peak than either of the two previous outbreaks. Fortunately, this outbreak is affecting a much smaller portion of the US population than the previous two at this time.
+-The rapid ramp-ups of the summer and fall outbreaks suggest an early warning system may be necessary to *see* an emerging outbreak before its too late. By the time the trends start to change in the case rate data it may be too late to avoid an outbreak. 
+- The peaks for the three different outbreaks get larger over time. This mirrors testing availability, which points to a major shortcoming of the COVID surveillance systems that states are using today. Longitudinal comparisons of case counts or case rates are muddied by the fact that testing is more widespread. Some public officials have dismissed rising case counts as simply a result of more testing, but the outbreaks identified in this analysis correspond to the one metric that truly matters--an increase in deaths which can be seen in the next chart. 
 
 <img align="center" src="img/COVID-deaths-by-outbreak-groupings.png" width='1000' height='auto' ></img>
 
 Deaths are the most important measure of severity of the outbreak.
 
-> - The impact of the outbreaks are clearly visible in the charts. The shaded area in the chart above represents the cost in terms of lives lost from the summer outbreak. This outbreak led to an additional 23,000 lives lost as compared to baseline. 
-> - Governments and public health agencies are unlikely to drive the death rate down to zero until a vaccine is available, but they can work to avoid an outbreak to avoid the associated costs of lives lost.
-> - *Deaths per 100,000* was much smaller for the second outbreak than the first.
-> - It's too early to say what the death rate will look like for the third outbreak. Recent news reports--which are not yet reflected in the data--suggest the death rate may end up being worse. Over the past several days, the Dakotas reported death rates exceeding 0.5 people per 100,000.
+- The impact of the outbreaks are clearly visible in the charts. The shaded area in the chart above represents the cost in terms of lives lost from the summer outbreak. During this outbreak, the death rate quadrupled and led to an additional 23,000 lives lost as compared to baseline. 
+- In the *no outbreak* group and the *spring outbreak* group, since July the death rate has fluctuated a bit but never crossed over 0.25 *deaths per 100,000* threshhold.
+- Governments and public health agencies are unlikely to drive the death rate down to zero until a vaccine is available, but they can work to avoid an outbreak to avoid the associated costs of lives lost.
+- The death rate from the initial spring outbreak was much more severe than the death rate from the summer outbreak. It's too early to say what the death rate will look like for the third outbreak.
 
 <img align="center" src="img/COVID-case-fatality-by-outbreak-groupings.png" width='1000' height='auto' ></img>
 
 Note that the reported death time series was shifted forward by 14 days to synchronize up better with the case time series so that an accurate case fatality ratio could be calculated.
 What are the takeaways from this chart?
 
-> - The case fatality ratio has been reduced significantly from the early days of the pandemic. This can probably be attributed to several factors. For one, much more testing is being done, so fewer cases are being missed. For two, the medical community knows much more about how to care for patients with the disease, which has probably led to better outcomes. 
-> - The case fatality ratio crept up a bit for the summer outbreak group, but otherwise hasn't seen marked changes after spring ended. There's no strong indication that summer's crowded hospitals had a major impact on case fatality--at least in this slice of the data.
+- The case fatality ratio has been reduced significantly from the early days of the pandemic. This can probably be attributed to several factors. For one, much more testing is being done, so fewer cases are being missed. For two, the medical community knows much more about how to care for patients with the disease, which has probably led to better outcomes. 
+- The case fatality ratio crept up a bit for the summer outbreak group, but otherwise hasn't seen marked changes after spring ended. There's no strong indication that summer's crowded hospitals had a major impact on case fatality--at least in this slice of the data.
+
+### Map animation of the upticks and outbreaks
+
+Two animations show the upticks and animations of the outbreaks over time. Due to the limitations of the Github repo, you may need to copy the html files to a local folder and then open them to see the animation. Links to the files are here. They can be found in the img directory of this repo.
+
+[case rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/case-rate-map.html)
+
+[death rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/death-rate-map.html)
+
 
 ### State groupings
 
