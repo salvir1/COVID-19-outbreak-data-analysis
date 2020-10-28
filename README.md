@@ -1,6 +1,6 @@
 # COVID Early Warning System Project Overview
 
-This project is an attempt to define a good early warning indicator for COVID outbreaks. States and public health agencies have a difficult job to keep COVID transmission under control. They could benefit from a system that provides them an early and accurate warning of an increase in new COVIC infections in their jurisdiction that has a strong probability of becoming an outbreak. 
+This project is an attempt to define a good early warning indicator for COVID outbreaks. States and public health agencies have a difficult job to keep COVID transmission under control. They could benefit from a system that provides them an early and accurate warning of an increase in new COVIC infections in their jurisdiction. 
 
 This project grew out of an interest to compare the available data from states that had experienced an outbreak vs. states that hadn't experienced an outbreak. As the analysis progressed it became clear that the common statistical measures of COVID-19 infection spread that are utilized today--total cases, case rates, and positive test rates--are not all equally informative. One is better than the others, yet all of them have their shortcomings. Part of the project explores the shortcomings with the measures that are currently available. 
 
@@ -29,7 +29,7 @@ The high level goals of this project are:
 - Terms of use: The COVID Tracking Project at The Atlantic’s data and website content is published under a Creative Commons CC BY 4.0 license, which requires users to attribute the source and license type (CC BY 4.0) when sharing our data or website content.
 - Citation: [the COVID Tracking Project](https://www.covidtrackingproject.com), Creative Commons CC BY 4.0 license
 
-### A meaningful grouping of outbreaks
+## A meaningful grouping of outbreaks
 
 As the COVID-19 epidemic unfolded in the US over the course of the year, outbreaks came in waves, with each of the three distinct identifiable waves having its own unique geographic distribution. These outbreaks were costly in terms of lives lost. By grouping states together according to outbreak--and a fourth group of states that did not experience an outbreak--one can see just how costly these outbreaks were. 
 
