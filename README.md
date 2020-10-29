@@ -36,13 +36,13 @@ As the COVID-19 epidemic unfolded in the US over the course of 2020, outbreaks c
 The four charts below illustrate the outbreaks in different ways. The upper left chart shows daily deaths per 100,000 people for the four different groupings. The upper right chart shows daily new case diagnoses per 100,000 for the same groupings. The lower left chart shows the total new diagnoses made per day. Finally, the lower right chart shows the positive test rate per day. A discussion of these charts and related topics follow. [Click here](####large) for larger versions of these charts.
 
 <p float="left">
- <img src="img/COVID-deaths-by-outbreak-groupings.png" style="width:49%">
- <img src="img/COVID-cases-by-outbreak-groupings.png" style="width:49%">
+ <img src="img/COVID-deaths-by-outbreak-groupings.png" style="width:40%">
+ <img src="img/COVID-cases-by-outbreak-groupings.png" style="width:40%">
 </p>
 
 <p float="left">
- <img src="img/COVID-total-cases-by-outbreak-groupings.png" style="width:49%">
- <img src="img/COVID-positive-test-rate-by-outbreak-groupings.png" style="width:49%">
+ <img src="img/COVID-total-cases-by-outbreak-groupings.png" style="width:45%">
+ <img src="img/COVID-positive-test-rate-by-outbreak-groupings.png" style="width:45%">
 </p>
 
 ### Outbreak avoidance saves lives
