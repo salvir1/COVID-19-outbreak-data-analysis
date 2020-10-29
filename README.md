@@ -40,10 +40,10 @@ The four charts below illustrate the outbreaks in different ways. The upper left
  <img src="img/COVID-cases-by-outbreak-groupings.png" style="width:20%">
 </p>
 
-<p float="left">
+ <div class="row">
  <img src="img/COVID-total-cases-by-outbreak-groupings.png" style="width:35%">
  <img src="img/COVID-positive-test-rate-by-outbreak-groupings.png" style="width:35%">
-</p>
+</div>
 
 ### Outbreak avoidance saves lives
 
