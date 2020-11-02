@@ -4,13 +4,13 @@ This project is an attempt to define a good early warning indicator for COVID ou
 
 This project grew out of an interest to compare the available data from states that had experienced an outbreak vs. states that hadn't experienced an outbreak. As the analysis progressed it became clear that the common statistical measures of COVID-19 infection spread that are utilized today--total cases, case rates, and positive test rates--are not all equally informative. One is better than the others, yet all of them have their shortcomings. The first part of this project explores the shortcomings with the measures that are currently available. It identifies the data that most clearly and consistently correlates with outbreaks.
 
-The first part of this project (described in this repo) informs the second part--a proposed alternative regional COVID-19 early warning system. This proposal addresses some of the shortcomings of the currently available tools to provide an earlier and more accurate warning of an increase in new COVID infections. Simulations of this alternative systems are modeled to compare its theoretical improvement in performance over current options. Ideally, a system like this could ultimately allow state governments and public health agencies to react sooner and keep an uptick from turning into an outbreak. This system is described in more detail [here](https://github.com/salvir1/covid-early-warning-system). 
+The first part of this project (described in this repo) informs the second part--a proposed alternative regional COVID-19 early warning system. This proposal addresses some of the shortcomings of the currently available tools to provide an earlier and more accurate warning of an increase in new COVID infections. Simulations of this alternative systems are modeled to compare its theoretical improvement in performance over current options. Ideally, a system like this could ultimately allow state governments and public health agencies to react sooner and keep an uptick from turning into an outbreak. This system is described in more detail [here](https://github.com/salvir1/part-2-covid-early-warning-system). 
 
 ## Goals
 
 The high level goals of this project are:
 - To characterize the difference at the regional level between an uptick and an outbreak in COVID case rates
-- To develop statistics that could become the foundation of a COVID-19 earling warning system (described [here](https://github.com/salvir1/covid-early-warning-system))
+- To develop statistics that could become the foundation of a COVID-19 earling warning system (described [here](https://github.com/salvir1/part-2-covid-early-warning-system))
 - To work with various EDA and data visualization tools and techniques
 
 ## Tools and techniques used in this project
@@ -73,7 +73,7 @@ We can use a conservative estimate of 2.5 infections for every diagnosis to get 
 
 The vast majority of positive cases (i.e. the numerator in all COVID monitoring metrics) comes from diagnostic tests of people who are symptomatic. Does reliance on confirmatory diagnostic tests add delay? People who become infected with COVID are thought to be shedding virus on average 2-3 days before they're symptomatic, if they're ever symptomatic ([Harvard](https://www.health.harvard.edu/diseases-and-conditions/if-youve-been-exposed-to-the-coronavirus)). Once symptomatic, they then need to decide to get tested, get tested (probably depends on the severity of the infection--it could range from 1 day to never), and await for the test results find their way to the tracking system (which can be from 1 to several days). Simply adding up these numbers suggests that a positive test result could take 6 or more days from active, detectable infection to when it enters a tracking database. The infection estimates in the previous time series were shifted back 6 days to simulate when the new infections first became detectable. 
 
-Is there a test regimen and test process system that could shorten this delay from detectability? Many universities are utilizing surveillance systems where they're going looking for active infections and not waiting until they show up. Further discussion of this approach at the state level can be found [here](https://github.com/salvir1/covid-early-warning-system).
+Is there a test regimen and test process system that could shorten this delay from detectability? Many universities are utilizing surveillance systems where they're going looking for active infections and not waiting until they show up. Further discussion of this approach at the state level can be found [here](https://github.com/salvir1/part-2-covid-early-warning-system).
 
 ### Time is critical: Noisy data adds delay
 
@@ -180,7 +180,7 @@ What are the takeaways from this chart?
 
 ## Areas for further study
 
-- This analysis informed the development and simulation of an early warning system based on randomized sampling of a subset of a population of people for pre-symptomatic COVID infection. This proposed early warning system is described in more detail [here](https://github.com/salvir1/covid-early-warning-system). 
+- This analysis informed the development and simulation of an early warning system based on randomized sampling of a subset of a population of people for pre-symptomatic COVID infection. This proposed early warning system is described in more detail [here](https://github.com/salvir1/part-2-covid-early-warning-system). 
 - Another further area of study would be to extend this analysis to other geographic regions outside of the US such as Europe.
 
 ## Contributors
