@@ -63,7 +63,9 @@ The chart of death rates shows that states with outbreaks experienced death rate
 
 The chart of case rates shows a shared baseline among groups that weren't experiencing an outbreak. (Note that although the baseline wasn't uniform and rose a bit over the summer, there was little change in the death rate over that same time period. Much of the increase in case rate might be attributable to the vastly expanded testing availability that occurred during that period and allowed for more cases to be diagnosed). The successive outbreaks emerged quickly and rose steeply. The implicit message in the sharpness of the outbreak curves is that time is critical to contain an emerging outbreak.
 
-The curve becomes even more steep if we look at new actice infections, and not just those that were confirmed with a diagnosis. One recent study estimated as many as 3 to 20 more people may have been infected than those who were confirmed positive with a COVID test ([Wu](https://www.nature.com/articles/s41467-020-18272-4)). There are many reasons why cases may go undiagnosed with a positive test. Some people infected with COVID are asymptomatic and do not know to get tested. A recent meta-analysis found that 17% of COVID-19 cases are asymptomatic ([Byambasuren](https://jammi.utpjournals.press/doi/abs/10.3138/jammi-2020-0030)). Others may develop symptoms but may not get tested. And there's false negatives from testing. 
+The curve becomes even more steep if we look at new active infections, and not just those that were confirmed with a diagnosis. Numerous studies point to many times more people being infected than diagnosed. One recent meta-analysis estimated 3-20 actual infections for every confirmed positive COVID diagnosis ([Wu](https://www.nature.com/articles/s41467-020-18272-4)). 
+
+There are many reasons why cases may go undiagnosed with a positive test. Some people infected with COVID are asymptomatic and do not know to get tested. A recent meta-analysis found that 17% of COVID-19 cases are asymptomatic ([Byambasuren](https://jammi.utpjournals.press/doi/abs/10.3138/jammi-2020-0030)). Many others may develop symptoms but may not get tested. And there's false negatives from testing. 
 
 We can use a conservative estimate of 2.5 infections for every diagnosis to get a picture of just how steep the actual infections curve looks. The green trendlines below show an estimate of new active infections for the states of Montana and Utah superimposed on graphs of diagnosed case rates.
 
@@ -73,7 +75,9 @@ We can use a conservative estimate of 2.5 infections for every diagnosis to get 
 
 ### Time is critical: Old news is not good news
 
-The vast majority of positive cases (i.e. the numerator in all COVID monitoring metrics) comes from diagnostic tests of people who are symptomatic. Does reliance on confirmatory diagnostic tests add delay? People who become infected with COVID are thought to be shedding virus on average 2-3 days before they're symptomatic, if they're ever symptomatic ([Harvard](https://www.health.harvard.edu/diseases-and-conditions/if-youve-been-exposed-to-the-coronavirus)). Once symptomatic, they then need to decide to get tested, get tested (probably depends on the severity of the infection--it could range from 1 day to never), and await for the test results find their way to the tracking system (which can be from 1 to several days). Simply adding up these numbers suggests that a positive test result could take 6 or more days from active, detectable infection to when it enters a tracking database. The infection estimates in the previous time series were shifted back 6 days to simulate when the new infections first became detectable. 
+The vast majority of positive cases (i.e. the numerator in all COVID monitoring metrics) comes from diagnostic tests of people who are symptomatic. Does reliance on confirmatory diagnostic tests add delay? People who become infected with COVID are thought to be shedding virus on average 2-3 days before they're symptomatic, if they're ever symptomatic ([Harvard](https://www.health.harvard.edu/diseases-and-conditions/if-youve-been-exposed-to-the-coronavirus)). Once symptomatic, they then need to decide to get tested, get tested (probably depends on the severity of the infection--it could range from 1 day to never), and await for the test results to find their way to the tracking system (which can be from 1 to several days). Simply adding up these numbers suggests that a positive test result from a symptomatic person could take 6 or more days from active, detectable infection to when it enters a tracking database. The infection estimates in the previous time series were shifted back 6 days to simulate when the new infections first became detectable. 
+
+There's good reason to believe this number is worse than that.
 
 Is there a test regimen and test process system that could shorten this delay from detectability? Many universities are utilizing surveillance systems where they're going looking for active infections and not waiting until they show up. Further discussion of this approach at the state level can be found [here](https://github.com/salvir1/part-2-covid-early-warning-system).
 
@@ -108,11 +112,15 @@ Many state governments and public health agencies pay close attention to the dai
 
 ### Normalization of the data improves it
 
-Returning to the original four charts, one small but important detail to note is that normalizing data can make for better comparisons. The chart of *total cases diagnosed per day* isn't as clean of an indicator of an outbreak. In this graph, the trendline of total cases diagnosed in the *no outbreak* group rose almost as much as the trendline for the *summer outbreak* group. All trendlines rose heading into the fall even though the outbreak for the *fall outbreak* group has thus far been more severe. The normalization that occurs in the *case rate* chart more accurately sorts out the true signal. 
+Returning to the original four charts, one small but important detail to note is that normalizing the data makes for better comparisons. The chart of *total cases diagnosed per day* isn't as clean of an indicator of an outbreak. Why call this detail out? Because the *total cases diagnosed per day* number is very frequently mentioned in the press, but it has potential to be misleading. (Total cases diagnosed per day is often *the first* statistic cited by the press, regardless of how much the availability of testing has changed and continues to change.)
+
+In this graph, the trendline of total cases diagnosed in the *no outbreak* group rose almost as much as the trendline for the *summer outbreak* group. Yet the *death rate*, which is the measure that matters the most, did not increase correspondingly in the *no outbreak* group. All trendlines rose heading into the fall even though the outbreak (death rate) for the *fall outbreak* group has thus far been more severe. The normalization that occurs in the *case rate* chart more accurately sorts out the true signal. 
 
 ### We learned from the traumatic events of the spring how to reduce adverse outcomes
 
-It's informative to compare the peaks in the trendlines between the *death rate* and the *case rate* charts. As one would expect, the peaks of the case rate trendlines happen earlier than the peaks of the death rate trendlines. What is less expected is the differences in their relative sizes. Fortunately, the peak of the summer outbreak death rate was less than half the size as that of the spring outbreak. The corresponding case rate peak was almost twice as large for the summer outbreak as it was for the spring outbreak. A likely explanation for some of the difference in death rates is that the medical community learned how to take better care of COVID patients over time. It's also likely that people who were most at risk to adverse outcomes from COVID were infected at lower rates in those places that experienced a summer outbreak than they were in locations that experienced a spring outbreak. It could be that we learned how to take better care of COVID patients and also improved our ability to keep the most vulnerable of us from getting infected with COVID in the first place.
+It's informative to compare the peaks in the trendlines between the *death rate* and the *case rate* charts. As one would expect, the peaks of the case rate trendlines happen earlier than the peaks of the death rate trendlines. What is less expected is the differences in their relative sizes. Fortunately, the peak of the summer outbreak death rate was less than half the size as that of the spring outbreak. A likely explanation for some of the difference in death rates is that the medical community learned how to take better care of COVID patients over time. It's also likely that people who were most at risk to adverse outcomes from COVID were infected at lower rates in those places that experienced a summer outbreak than they were in locations that experienced a spring outbreak. It could be that we learned how to take better care of COVID patients and also improved our ability to keep the most vulnerable of us from getting infected with COVID in the first place.
+
+It's also worthwhile noting that the corresponding case rate peak was almost twice as large for the summer outbreak as it was for the spring outbreak. This is clearly due to testing availability.
 
 ### Should we be looking more keenly at infection rates of COVID in people with high contact rates?
 
@@ -122,26 +130,39 @@ This is plausible when one considers that neither transmission rates nor risk of
 
 ### State groupings
 
-How were these groupings made? For this analysis, states were grouped into one of four categories based upon season and severity of an outbreak in terms of daily deaths reported per 100,000. An outbreak was defined at the state level according to criteria desribed in the states analysis section. When rolled up to the state grouping level, the daily death rate exceeded 0.25 per 100,000 population for an outbreak. Outbreaks for the spring, summer, and fall began prior to 4/1/20, 7/1/20, and 10/1/20 respectively.
+How were these groupings made? A retrospective analysis of daily COVID case and death by state for the US was conducted for data from 3/10/20 to 10/15/20. Over this time, three distinctly timed outbreaks swept through different parts of the country. States were grouped into one of these three outbreak categories or a fourth *no outbreak* category if they did not experience an outbreak during this time.
+
+Outbreaks for the spring, summer, and fall began prior to 4/15/20, 7/15/20, and 10/15/20 respectively. Since testing availability was limited in the spring and increasing during the summer, death rates were used to identify the spring and summer outbreak periods. Deaths trail infections by several weeks, so states with spring outbreaks typicaly saw deaths peak in mid May and states with summer outbreaks typically saw deaths peak in August. A state was classified to one of these two outbreak groupings if the reported daily death rate from COVID for the state consistently exceeded 0.4 per 100,000 population for that time period.
+
+Testing availability had become more available by mid summer, and case rate comparability became a more useful measure. All states with a death rate exceeding 0.4 per 100,000 during the summer outbreak also had a daily new diagnoses case rate consistently above 30 cases per 100,000. Only Tennessee briefly exceeded 30 cases per 100,000 over the summer without having an outbreak with a corresponding death rate in excess of 0.4 per 100,000. Almost all other states saw case rates below 25 per 100,000. 
+
+This analysis is being conducted concurrent to the fall outbreak with a cutoff of 10/15/20. Since the impact on death rate is not yet fully visible on the data, the fall outbreak group was identified stricly by the case rate. The fall outbreak group was identified by case rate above 30 prior to 10/15/20. Unfortunately but predictably, death rates for this group of states is now rising from baseline. 
+
+Since 10/15/20, a fourth outbreak category appears to be forming quickly on the heels of the fall outbreak. It doesn't look like the country will experience an ebb in infections like it did after the spring or summer outbreaks. 
 
 Spring outbreak
+- Infections occurred prior to 4/15/20
+- Deaths consistently exceeded 0.5 per 100,000 per day in May and June
 - Occurred primarily in the northeast, Great Lakes region, and Louisiana
-- Exceeded 0.8 deaths per 100,000 per day between June and August
 - About 90M people are in this group
 
 Summer outbreak
+- Infections occurred 4/15/20 - 7/15/20
+- Deaths consistently exceeded 0.4 per 100,000 per day in late July through early September
+- Cases consistently exceeded 30 per 100,000 per day
 - Occurred primarily in the southeast and Arizona
-- Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day between June and August
 - About 89M people are in this group
 
 Fall outbreak
-- Upper midwest and Arkansas at this time with more states to be added if they meet the threshholds
-- Exceeded 40 cases per 100,000 per day or 0.5 deaths per 100,000 per day after August
-- About 16M people are in this group
+- Infections occurred 7/15/20 - 10/15/20
+- Too early to tell when death rates will peak and how high, but rates for this group are already higher than other states
+- Cases consistently exceeded 30 per 100,000 per day
+- Upper midwest, some Rocky Mountain states, and Arkansas
+- About 19M are in this group
 
 No outbreak
 - Avoided classification in one of the other outbreak categories
-- About 133M people are in this group
+- About 130M people are in this group
 
 The state groupings help to sort the state trends in a meaningful way. One can see this by attempting to look at the death rate trendline at the state level for just 25 states. The chart below of daily COVID death rates by state over time is a confusion of squiggly lines, although one can start to see patterns if one looks long enough. 
 
@@ -149,13 +170,19 @@ The state groupings help to sort the state trends in a meaningful way. One can s
 
 The state level trendlines become more understandable when states are presented in the same groupings as before. The following charts display the COVID statistics of death rate, case, rate, and positive test rate, but now at the state level.
 
-The state-level charts eveal the dangerous acceleration of a COVID outbreak more clearly. Note the steep upward trajectory of deaths and case rates for a number of states that experienced an outbreak. This underscores the importance of time in identifying a potential outbreak. Once an outbreak begins it can grow quickly and leave state governments and public health agencies scrambling to try to get ahead of a steep curve.  
+The state-level charts reveal the dangerous acceleration of a COVID outbreak more clearly. Note the steep upward trajectory of deaths and case rates for a number of states that experienced an outbreak. This underscores the importance of time in identifying an emerging outbreak. Once an outbreak begins it can grow quickly and leave state governments and public health agencies scrambling to try to get ahead of a steep curve.  
 
 <img align="center" src="img/COVID-deaths-by-state.png" width='1000' height='auto' ></img>
 
 <img align="center" src="img/COVID-cases-by-state.png" width='1000' height='auto' ></img>
 
 <img align="center" src="img/COVID-positive-test-rate-by-state.png" width='1000' height='auto' ></img>
+
+### A case rate threshhold?
+
+The [State groupings](#State-groupings) section identified a key threshhold between states that didn't experience an outbreak over a time period and those that did. Once testing was no longer rationed like it was in the early months of the epidemic, states that experienced outbreaks had case rates above 30 per 100,000. Only one state, Tennessee, briefly had a case rate above 30 without a corresponding death rate above 0.40 deaths per 100,000. 
+
+Although it's hard to compare case rates between states given that the sources of data that go into the case rate aren't controlled properly to make accurate statistical comparisons, a single number that has thus far told the story across nearly every state suggests that there *is* an underlying real threshhold, and 30 cases per 100,000 per day is a reasonable approximation for it given the data limitations. 
 
 ### Large charts
 
@@ -168,7 +195,6 @@ The state-level charts eveal the dangerous acceleration of a COVID outbreak more
 <img align="center" src="img/COVID-positive-test-rate-by-outbreak-groupings.png" width='1000' height='auto' ></img>
 
 [Click to return to narrative section](#State-groupings-bring-important-trends-to-light)
-
 
 ### SIDEBAR: Case fatality ratio
 
