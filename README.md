@@ -6,7 +6,7 @@ This project is an attempt to define a good early warning indicator for COVID ou
 
 This project grew out of an interest to compare the available data from states that had experienced an outbreak vs. states that hadn't experienced an outbreak. As the analysis progressed it became clear that the common statistical measures of COVID-19 infection spread that are utilized today--total cases, case rates, and positive test rates--are not all equally informative. One is better than the others, yet all of them have their shortcomings. The first part of this project explores the shortcomings with the measures that are currently available. It identifies the data that most clearly and consistently correlates with outbreaks.
 
-The first part of this project (described in this repo) informs the second part--a proposed alternative regional COVID-19 early warning system. This proposal addresses some of the shortcomings of the currently available tools to provide an earlier and more accurate warning of an increase in new COVID infections. Simulations of this alternative systems are modeled to compare its theoretical improvement in performance over current options. Ideally, a system like this could ultimately allow state governments and public health agencies to react sooner and keep an uptick from turning into an outbreak. This system is described in more detail [here](https://github.com/salvir1/part-2-covid-early-warning-system). 
+The first part of this project (described in this repo) informs the second part--a proposed alternative regional COVID-19 early warning system ([described here](https://github.com/salvir1/part-2-covid-early-warning-system)). This second part addresses some of the shortcomings of the currently available tools to provide an earlier and more accurate warning of an increase in new COVID infections. Simulations of these alternative concepts are modeled to compare its theoretical improvement in performance over current options. Ideally, a system like this could ultimately allow state governments and public health agencies to react sooner and keep an uptick from turning into an outbreak. 
 
 ## Goals
 
@@ -38,13 +38,13 @@ As the COVID-19 epidemic unfolded in the US over the course of 2020, outbreaks c
 The four charts below illustrate the outbreaks in different ways. The upper left chart shows daily deaths per 100,000 people for the four different groupings. The upper right chart shows daily new case diagnoses per 100,000 for the same groupings. The lower left chart shows the total new diagnoses made per day. Finally, the lower right chart shows the positive test rate per day. A discussion of these charts and related topics follow. ([Click here](#Large-charts) for larger versions of these charts).
 
 <p float="left">
- <img src="img/COVID-deaths-by-outbreak-groupings.png" width = '450'></img>
- <img src="img/COVID-cases-by-outbreak-groupings.png" width = '450'></img>
+ <img src="img/COVID-deaths-by-outbreak-groupings.png" width = '500'></img>
+ <img src="img/COVID-cases-by-outbreak-groupings.png" width = '500'></img>
 </p>
 
 <div class="row">
- <img src="img/COVID-total-cases-by-outbreak-groupings.png" width = '450'></img>
- <img src="img/COVID-positive-test-rate-by-outbreak-groupings.png" width = '450'></img>
+ <img src="img/COVID-total-cases-by-outbreak-groupings.png" width = '500'></img>
+ <img src="img/COVID-positive-test-rate-by-outbreak-groupings.png" width = '500'></img>
 </div>
 
 Another way to display changes over time is with an animation. Click on the links below to see the dynamic progression of the COVID-19 outbreak at the state level over time. (Due to the limitations of the Github repo to run html in markdown language, you may need to copy the html files to a local folder and then open them to see the animation. Links to the files are here. They can be found in the img directory of this repo.)
@@ -122,11 +122,13 @@ It's informative to compare the peaks in the trendlines between the *death rate*
 
 It's also worthwhile noting that the corresponding case rate peak was almost twice as large for the summer outbreak as it was for the spring outbreak. This is clearly due to testing availability.
 
-### Should we be looking more keenly at infection rates of COVID in people with high contact rates?
+### Transmission rates are not uniform across the population
 
-It's also informative to compare the height of the peaks of the death rate and case rate for the summer outbreak (and also for the fall outbreak although that story has not yet fully played out). The change in testing availability muddies things up a bit, but visually it appears as if the change in height of the case rate surpasses the change in height of the death rate. In other words, infection rates may have expanded more than death rates. 
+Contact rates--the measure of interaction with other people--are obviously not uniform across the population. They probably follow something along the lines of a Pareto distribution where approximately 20% of the population could be responsible for 80% of the interactions. This is also the vector for COVID transmission, so it's informative to consider how COVID may spread differently through different subsets of a population segmented by contact rate.
 
-This is plausible when one considers that neither transmission rates nor risk of adverse outcomes are uniform across a population. Taking the transmission rates first, transmission occurs through proximite human-to-human contact. One would expect people with higher contact rates to have higher rates of infection. *Indeed, one would expect the spread of COVID virus to be dependent upon those of us with higher contact rates.* Now, taking adverse outcomes into account, certain subsets of the population have much higher risk of death than others. Seventy-nine percent of COVID deaths in the US occurred in [people older than 65](https://www.cdc.gov/nchs/nvss/vsrr/covid_weekly/index.htm). Continued emphasis must be on reducing transmission to this population. This knowledge could be used as the foundation for a targeted COVID surveillance system. We could monitor COVID infection rates among the most mobile of us where an outbreak will start to form first as one key element in a strategy to minimize transmission to the most vulnerable of us.
+Here's one interesting view. Compare the height of the peaks of the death rate and case rate for the summer outbreak (and also for the fall outbreak although that story has not yet fully played out). The change in testing availability muddies things up a bit, but visually it appears as if the change in height of the case rate surpasses the change in height of the death rate. In other words, at their peaks the growth in infection rates appear to outpace the growth in death rates. 
+
+This is plausible when one considers that neither transmission rates nor risk of adverse outcomes are uniform across a population. One would expect people with higher contact rates to have higher rates of infection. *Indeed, one would expect the spread of COVID virus to be dependent upon those of us with higher contact rates.* Now, taking adverse outcomes into account, certain subsets of the population have much higher risk of death than others. Seventy-nine percent of COVID deaths in the US occurred in [people older than 65](https://www.cdc.gov/nchs/nvss/vsrr/covid_weekly/index.htm). Continued emphasis must be on reducing transmission to this population. This knowledge could be used as the foundation for a targeted COVID surveillance system. We could monitor COVID infection rates among the most mobile of us where an outbreak will start to form first as one key element in a strategy to minimize transmission to the most vulnerable of us.
 
 ### State groupings
 
@@ -178,11 +180,24 @@ The state-level charts reveal the dangerous acceleration of a COVID outbreak mor
 
 <img align="center" src="img/COVID-positive-test-rate-by-state.png" width='1000' height='auto' ></img>
 
-### A case rate threshhold?
+### Case rate threshhold analysis
 
-The [State groupings](#State-groupings) section identified a key threshhold between states that didn't experience an outbreak over a time period and those that did. Once testing was no longer rationed like it was in the early months of the epidemic, states that experienced outbreaks had case rates above 30 per 100,000. Only one state, Tennessee, briefly had a case rate above 30 without a corresponding death rate above 0.40 deaths per 100,000. 
+The [State groupings](#State-groupings) section identified a key threshhold between states that didn't experience an outbreak over a time period and those that did. Once testing was no longer rationed like it was in the early months of the epidemic, states that experienced outbreaks had peak case rates above 30 per 100,000. Only one state, Tennessee, briefly had a case rate above 30 without a corresponding death rate above 0.40 deaths per 100,000. 
 
 Although it's hard to compare case rates between states given that the sources of data that go into the case rate aren't controlled properly to make accurate statistical comparisons, a single number that has thus far told the story across nearly every state suggests that there *is* an underlying real threshhold, and 30 cases per 100,000 per day is a reasonable approximation for it given the data limitations. 
+
+Here's another approach that arrives at a case rate threshhold--this time looking at *average* case rate over the summer instead of peak case rate. For this analysis, a k-means algorithm was used to identify the summer outbreak states to minimize subjective bias. The following graph plots average case rates and average death rates by state for the summer months. There is clear separation between the outbreak states in yellow and the no outbreak states in blue. All but one of the *no outbreak* states had average case rates below 20 per 100,000. 
+
+<img align="center" src="img/summer-severity-scatter.png" width='1000' height='auto' ></img>
+
+A comparison of the respective means shows a clear difference between the *no outbreak* states and the *outbreak* states over the summertime.
+
+| Classification | Mean Case Rate | Mean Death Rate |
+| -------------- | -------------- | --------------- |
+| No outbreak    |      9.3       |      0.14       |
+| Outbreak       |     24.2       |      0.49       |
+
+
 
 ### Large charts
 
