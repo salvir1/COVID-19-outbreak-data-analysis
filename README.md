@@ -38,13 +38,13 @@ As the COVID-19 epidemic unfolded in the US over the course of 2020, outbreaks c
 The four charts below illustrate the outbreaks in different ways. The upper left chart shows daily deaths per 100,000 people for the four different groupings. The upper right chart shows daily new case diagnoses per 100,000 for the same groupings. The lower left chart shows the total new diagnoses made per day. Finally, the lower right chart shows the positive test rate per day. A discussion of these charts and related topics follow. ([Click here](#Large-charts) for larger versions of these charts).
 
 <p float="left">
- <img src="img/COVID-deaths-by-outbreak-groupings.png" width = '500'></img>
- <img src="img/COVID-cases-by-outbreak-groupings.png" width = '500'></img>
+ <img src="img/COVID-deaths-by-outbreak-groupings.png" width = '450'></img>
+ <img src="img/COVID-cases-by-outbreak-groupings.png" width = '450'></img>
 </p>
 
 <div class="row">
- <img src="img/COVID-total-cases-by-outbreak-groupings.png" width = '500'></img>
- <img src="img/COVID-positive-test-rate-by-outbreak-groupings.png" width = '500'></img>
+ <img src="img/COVID-total-cases-by-outbreak-groupings.png" width = '450'></img>
+ <img src="img/COVID-positive-test-rate-by-outbreak-groupings.png" width = '450'></img>
 </div>
 
 Another way to display changes over time is with an animation. Click on the links below to see the dynamic progression of the COVID-19 outbreak at the state level over time. (Due to the limitations of the Github repo to run html in markdown language, you may need to copy the html files to a local folder and then open them to see the animation. Links to the files are here. They can be found in the img directory of this repo.)
