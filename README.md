@@ -109,18 +109,13 @@ The high daily variability is clearly visible in COVID metrics in use today. The
 
 Many state governments and public health agencies pay close attention to the daily updates of their COVID metrics, but the delays and noisiness of the data outlined above hinder the ability of their COVID monitoring systems to detect an outbreak in a timely and accurate fashion. This is all the more challenging since state governments are also battling pandemic fatigue and don't want to cry wolf unless they need to. 
 
-Here are charts from several states working hard to strike the right balance. Lines have been added to indicate when they notified the public of what they viewed to be a concerning rise in cases.  Note how much the estimated new infections rate has risen by the time notification occurs. 
+Here are charts from several states working hard to strike the right balance. Lines have been added to indicate when they notified the public of what they viewed to be a concerning rise in cases this fall. In some cases the estimated new infections rate had already started rising steadily by the time notification occurs. In the case of Washington state, notification occurs after the trend had been rising from a low baseline. The state government could see diagnoses rising in some parts of the state. 
+
+In all cases, new infections started or continued their rise after public notice. The notice didn't appear to have the desired affect.
 
 <p float="left">
- <img src="img/COVID-infections-and-cases-for-MT-with-threshholds-and-response.png" width = '500'></img>
- <img src="img/COVID-infections-and-cases-for-UT-with-threshholds-and-response.png" width = '500'></img>
+ <img src="img/COVID-infections-and-cases-with-response.png" width = '1000'></img>
 </p>
-
-<!-- <div class="row">
- <img src="img/COVID-infections-and-cases-for-WI-with-threshholds-and-reponse.png" width = '500'></img>
- <img src="img/COVID-infections-and-cases-for-MT-with-threshholds.png" width = '500'></img>
-</div>
- -->
 
 ### Case rate threshhold analysis
 
@@ -130,10 +125,9 @@ Although it's hard to compare case rates between states given that the sources o
 
 Here's another approach that arrives at a case rate threshhold--this time looking at *average* case rate over the summer instead of peak case rate. For this analysis, a k-means algorithm was used to identify the summer outbreak states to minimize subjective bias. The following graph plots average case rates and average death rates by state for the summer months. There is clear separation between the outbreak states in yellow and the no outbreak states in blue. All but one of the *no outbreak* states had average case rates below 20 per 100,000. 
 
-<img align="center" src="img/summer-severity-scatter.png" width='1000' height='auto' ></img>
+<img align="center" src="img/summer-severity-scatter.png" width='600' height='auto' ></img>
 
 A comparison of the respective means shows a clear difference between the *no outbreak* states and the *outbreak* states over the summertime.
-
 | Classification | Mean Case Rate | Mean Death Rate |
 | -------------- | -------------- | --------------- |
 | No outbreak    |      9.3       |      0.14       |
