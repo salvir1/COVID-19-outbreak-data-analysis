@@ -1,18 +1,18 @@
 # COVID Early Warning System Project Overview
 
-This project is an attempt to define a good early warning indicator for COVID outbreaks. States and public health agencies have a difficult job to keep COVID transmission under control. One of the keys to control is a system that provides them an early and accurate warning of an increase in new COVIC infections in their jurisdiction. How good is the data that they are currently using at providing that early indiactor? Is there a way to improve upon the timeliness and accuracy of the warning?
+This project is an attempt to define a good early warning indicator for COVID outbreaks. States and public health agencies have a difficult job to keep COVID transmission under control while simultaneously managing their economies and battling pandemic fatigure. One of the keys to controlling infections is a system that provides governments with an early and accurate warning of an increase in new COVIC infections in their jurisdiction. How good is the data that they are currently using at providing that early indiactor? Is there a way to improve upon the timeliness and accuracy of the warning?
 
-This project grew out of an interest to compare the available data from states that had experienced an outbreak vs. states that hadn't experienced an outbreak. As the analysis progressed it became clear that the common statistical measures of COVID-19 infection spread that are utilized today--total cases, case rates, and positive test rates--all have their shortcomings. The first part of this project explores the shortcomings with the measures that are currently available. Not all of the shortcomings are equal. The study identifies the one metric that most clearly and consistently correlates with outbreaks-albeit not as quickly or definitively as desired.
+## Part 1: COVID Early Warning System Analysis
 
-## Part 2: An Alternative COVID Early Warning System
+This project grew out of an interest to compare the available data from states that had experienced an outbreak vs. states that hadn't experienced an outbreak. As the analysis progressed it became clear that the common statistical measures of COVID-19 infection spread that are utilized today--total cases, case rates, and positive test rates--all have their shortcomings. The first part of this project explores the shortcomings with the measures that are currently available.  Not all of the shortcomings are equal. The study identifies the one metric that most clearly and consistently correlates with outbreaks-albeit not as quickly or definitively as desired.
 
-The first part of this project (described [here](https://github.com/salvir1/part-1-covid-outbreak-analysis)) informs this second part--a proposed alternative regional COVID-19 early warning system. This second part addresses some of the shortcomings of the currently available tools to provide an earlier and more certain warning of an increase in new COVID infections. Simulations of these alternative concepts are modeled to compare its theoretical improvement in performance over current options. Ideally, a system like this could ultimately allow state governments and public health agencies a more accurate picture of COVID prevalence in their jurisdictions so that they know when they need to respond to keep an uptick from turning into an outbreak. That is the focus of this repo.
+The first part of this project (described in this repo) informs the second part--a proposed alternative regional COVID-19 early warning system ([described here](https://github.com/salvir1/part-2-covid-early-warning-system)). This second part addresses some of the shortcomings of the currently available tools to provide an earlier and more certain warning of an increase in new COVID infections. Simulations of these alternative concepts are modeled to compare its theoretical improvement in performance over current options. Ideally, a system like this could ultimately allow state governments and public health agencies to more accurate picture of COVID prevalence in their jurisdictions so that they know when they need to respond to keep an uptick from turning into an outbreak. 
 
 ## Goals
 
 The high level goals of this project are:
-- To characterize the difference at the regional level between an uptick and an outbreak in COVID case rates (described [here](https://github.com/salvir1/part-1-covid-outbreak-analysis))
-- To develop statistics that could become the foundation of a COVID-19 earling warning system
+- To characterize the difference at the regional level between an uptick and an outbreak in COVID case rates
+- To develop statistics that could become the foundation of a COVID-19 earling warning system (described [here](https://github.com/salvir1/part-2-covid-early-warning-system))
 - To work with various EDA and data visualization tools and techniques
 
 ## Tools and techniques used in this project
@@ -29,9 +29,7 @@ The high level goals of this project are:
 ## Raw data sourced from COVID Tracking Project
 
 - Terms of use: The COVID Tracking Project at The Atlantic’s data and website content is published under a Creative Commons CC BY 4.0 license, which requires users to attribute the source and license type (CC BY 4.0) when sharing our data or website content.
-- Citation: [the COVID Tracking Project](https://www.covidtrackingproject.com), Creative Commons CC BY 4.0 license
-
-# SECTION 1: State groupings bring important trends to light
+- Citation: [the COVID Tracking Project](https://www.covidtrackingproject.com), Creative Commons CC BY 4.0 license# SECTION 1: State groupings bring important trends to light
 
 As the COVID-19 epidemic unfolded in the US over the course of 2020, outbreaks came in waves. These waves were not uniform across the country. Rather, each of the three distinct identifiable waves had its own unique geographic distribution. Most states, thankfully, only experienced one wave. Many others avoided severe outbreaks altogether. For those that had an outbreak, they were costly in terms of lives lost. By grouping states together according to outbreak--and a fourth group of states that did not experience an outbreak--one can see these outbreaks clearly, and also see just how costly these outbreaks were. ([Click here](#SECTION-4:-State-groupings) to learn how and why these groups were constructed).
 
