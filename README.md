@@ -115,7 +115,7 @@ In the cases of the three states with clear and concerning outbreaks, new infect
 
 # SECTION 3: Case rate threshhold analysis
 
-The four charts in the previous section all share a common characteristic. During the month of August case rates stayed below 20 cases per 100,000 and no state experienced an outbreak. This held true for other states as well. The [State groupings](#SECTION-4:-State-groupings) section identified a key threshhold between states that didn't experience an outbreak over a time period and those that did. Once testing was no longer rationed like it was in the early months of the epidemic, states that experienced outbreaks had **peak** case rates above 30 per 100,000. Only one state, Tennessee, briefly had a peak case rate above 30 without a corresponding death rate above 0.40 deaths per 100,000. 
+The four charts in the previous section all share a common characteristic. During the month of August case rates stayed below 20 cases per 100,000 and no state experienced an outbreak. This held true for other states as well. The [State groupings](#SECTION-4-State-groupings) section identified a key threshhold between states that didn't experience an outbreak over a time period and those that did. Once testing was no longer rationed like it was in the early months of the epidemic, states that experienced outbreaks had **peak** case rates above 30 per 100,000. Only one state, Tennessee, briefly had a peak case rate above 30 without a corresponding death rate above 0.40 deaths per 100,000. 
 
 Although it's hard to compare case rates between states given that the sources of data that go into the case rate aren't controlled properly to make accurate statistical comparisons, a single number that has thus far told the story across nearly every state suggests that there *is* an underlying real threshhold, and a **peak** of 30 cases per 100,000 per day is a reasonable approximation for it given the data limitations. This would relate directly to **R0**, the basic reproduction number that determines how fast an infectious disease is reproducing. 
 
@@ -181,7 +181,7 @@ The state-level charts reveal the dangerous acceleration of a COVID outbreak mor
 
 <img align="center" src="img/COVID-positive-test-rate-by-state.png" width='1000' height='auto' ></img>
 
-[Click to return to narrative section](#SECTION-1:-State-groupings-bring-important-trends-to-light)
+[Click to return to narrative section](#SECTION-1-State-groupings-bring-important-trends-to-light)
 
 # SECTION 5: Large charts
 
@@ -193,7 +193,7 @@ The state-level charts reveal the dangerous acceleration of a COVID outbreak mor
 
 <img align="center" src="img/COVID-positive-test-rate-by-outbreak-groupings.png" width='1000' height='auto' ></img>
 
-[Click to return to narrative section](#SECTION-1:-State-groupings-bring-important-trends-to-light)
+[Click to return to narrative section](#SECTION-1-State-groupings-bring-important-trends-to-light)
 
 ### SIDEBAR: Case fatality ratio
 
@@ -205,7 +205,7 @@ What are the takeaways from this chart?
 - The case fatality ratio has been reduced significantly from the early days of the pandemic. This can probably be attributed to several factors. For one, much more testing is being done, so fewer cases are being missed. For two, the medical community knows much more about how to care for patients with the disease, which has probably led to better outcomes. 
 - The case fatality ratio crept up a bit for the summer outbreak group, but otherwise hasn't seen marked changes after spring ended. There's no strong indication that summer's crowded hospitals had a major impact on case fatality--at least in this slice of the data.
 
-[Click to return to narrative section](#SECTION-1:-State-groupings-bring-important-trends-to-light)
+[Click to return to narrative section](#SECTION-1-State-groupings-bring-important-trends-to-light)
 
 ## Areas for further study
 
