@@ -33,9 +33,9 @@ The high level goals of this project are:
 
 # SECTION 1: State groupings bring important trends to light
 
-As the COVID-19 epidemic unfolded in the US over the course of 2020, outbreaks came in waves. These waves were not uniform across the country. Rather, each of the three distinct identifiable waves had its own unique geographic distribution. Most states, thankfully, only experienced one wave. Many others avoided severe outbreaks altogether. For those that had an outbreak, they were costly in terms of lives lost. By grouping states together according to outbreak--and a fourth group of states that did not experience an outbreak--one can see these outbreaks clearly, and also see just how costly these outbreaks were. ([Click here](#section-4:-state-groupings) to learn how and why these groups were constructed).
+As the COVID-19 epidemic unfolded in the US over the course of 2020, outbreaks came in waves. These waves were not uniform across the country. Rather, each of the three distinct identifiable waves had its own unique geographic distribution. Most states, thankfully, only experienced one wave. Many others avoided severe outbreaks altogether. For those that had an outbreak, they were costly in terms of lives lost. By grouping states together according to outbreak--and a fourth group of states that did not experience an outbreak--one can see these outbreaks clearly, and also see just how costly these outbreaks were. ([Click here](#SECTION-4-State-groupings) to learn how and why these groups were constructed).
 
-The four charts below illustrate the outbreaks in different ways. The upper left chart shows daily deaths per 100,000 people for the four different groupings. The upper right chart shows daily new case diagnoses per 100,000 for the same groupings. The lower left chart shows the total new diagnoses made per day. Finally, the lower right chart shows the positive test rate per day. A discussion of these charts and related topics follow. ([Click here](#SECTION-5:-Large-charts) for larger versions of these charts).
+The four charts below illustrate the outbreaks in different ways. The upper left chart shows daily deaths per 100,000 people for the four different groupings. The upper right chart shows daily new case diagnoses per 100,000 for the same groupings. The lower left chart shows the total new diagnoses made per day. Finally, the lower right chart shows the positive test rate per day. A discussion of these charts and related topics follow. ([Click here](#SECTION-5-Large-charts) for larger versions of these charts).
 
 <p float="left">
  <img src="img/COVID-deaths-by-outbreak-groupings.png" width = '450'></img>
@@ -77,7 +77,7 @@ It's also worthwhile noting that the corresponding case rate peak was almost twi
 
 The chart of case rates shows a shared baseline among groups that weren't experiencing an outbreak. The successive outbreaks emerged quickly and rose steeply. The steepness in the slope of the outbreak curves implies that time is critical to contain an emerging outbreak. (Note that although the baseline wasn't uniform and rose a bit over the summer, there was little change in the death rate over that same time period. Much of the increase in case rate might be attributable to the vastly expanded testing availability that occurred during that period and allowed for more cases to be diagnosed). 
 
-# SECTION 2: *Time is critical* indepth analysis
+# SECTION 2: Time is critical
 
 ## When an outbreak occurs, new active infections increase faster than what the data shows
 
