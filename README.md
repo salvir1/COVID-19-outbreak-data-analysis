@@ -1,18 +1,18 @@
 # COVID Early Warning System Project Overview
 
-This project is an attempt to define a good early warning indicator for COVID outbreaks. States and public health agencies have a difficult job to keep COVID transmission under control while simultaneously managing their economies and battling pandemic fatigure. One of the keys to controlling infections is a system that provides governments with an early and accurate warning of an increase in new COVIC infections in their jurisdiction. How good is the data that they are currently using at providing that early indiactor? Is there a way to improve upon the timeliness and accuracy of the warning?
+This project is an attempt to define a good early warning indicator for COVID outbreaks. States and public health agencies have a difficult job to keep COVID transmission under control. One of the keys to control is a system that provides them an early and accurate warning of an increase in new COVIC infections in their jurisdiction. How good is the data that they are currently using at providing that early indiactor? Is there a way to improve upon the timeliness and accuracy of the warning?
 
-## Part 1: COVID Early Warning System Analysis
+This project grew out of an interest to compare the available data from states that had experienced an outbreak vs. states that hadn't experienced an outbreak. As the analysis progressed it became clear that the common statistical measures of COVID-19 infection spread that are utilized today--total cases, case rates, and positive test rates--all have their shortcomings. The first part of this project explores the shortcomings with the measures that are currently available. Not all of the shortcomings are equal. The study identifies the one metric that most clearly and consistently correlates with outbreaks-albeit not as quickly or definitively as desired.
 
-This project grew out of an interest to compare the available data from states that had experienced an outbreak vs. states that hadn't experienced an outbreak. As the analysis progressed it became clear that the common statistical measures of COVID-19 infection spread that are utilized today--total cases, case rates, and positive test rates--are not all equally informative. One is better than the others, yet all of them have their shortcomings. The first part of this project explores the shortcomings with the measures that are currently available. It identifies the data that most clearly and consistently correlates with outbreaks.
+## Part 2: An Alternative COVID Early Warning System
 
-The first part of this project (described in this repo) informs the second part--a proposed alternative regional COVID-19 early warning system ([described here](https://github.com/salvir1/part-2-covid-early-warning-system)). This second part addresses some of the shortcomings of the currently available tools to provide an earlier and more accurate warning of an increase in new COVID infections. Simulations of these alternative concepts are modeled to compare its theoretical improvement in performance over current options. Ideally, a system like this could ultimately allow state governments and public health agencies to more accurate picture of COVID prevalence in their jurisdictions so that they know when they need to respond to keep an uptick from turning into an outbreak. 
+The first part of this project (described [here](https://github.com/salvir1/part-1-covid-outbreak-analysis)) informs this second part--a proposed alternative regional COVID-19 early warning system. This second part addresses some of the shortcomings of the currently available tools to provide an earlier and more certain warning of an increase in new COVID infections. Simulations of these alternative concepts are modeled to compare its theoretical improvement in performance over current options. Ideally, a system like this could ultimately allow state governments and public health agencies a more accurate picture of COVID prevalence in their jurisdictions so that they know when they need to respond to keep an uptick from turning into an outbreak. That is the focus of this repo.
 
 ## Goals
 
 The high level goals of this project are:
-- To characterize the difference at the regional level between an uptick and an outbreak in COVID case rates
-- To develop statistics that could become the foundation of a COVID-19 earling warning system (described [here](https://github.com/salvir1/part-2-covid-early-warning-system))
+- To characterize the difference at the regional level between an uptick and an outbreak in COVID case rates (described [here](https://github.com/salvir1/part-1-covid-outbreak-analysis))
+- To develop statistics that could become the foundation of a COVID-19 earling warning system
 - To work with various EDA and data visualization tools and techniques
 
 ## Tools and techniques used in this project
@@ -24,18 +24,18 @@ The high level goals of this project are:
 - Plotly, Matplotlib
 
 **Techniques**
-- Time series, clustering, spatial mapping, simple moving average, simulation
+- Time series, clustering, spatial mapping, simple moving average, linear regression, simulation
 
 ## Raw data sourced from COVID Tracking Project
 
 - Terms of use: The COVID Tracking Project at The Atlantic’s data and website content is published under a Creative Commons CC BY 4.0 license, which requires users to attribute the source and license type (CC BY 4.0) when sharing our data or website content.
 - Citation: [the COVID Tracking Project](https://www.covidtrackingproject.com), Creative Commons CC BY 4.0 license
 
-## SECTION 1: State groupings bring important trends to light
+# SECTION 1: State groupings bring important trends to light
 
-As the COVID-19 epidemic unfolded in the US over the course of 2020, outbreaks came in waves. These waves were not uniform across the country. Rather, each of the three distinct identifiable waves had its own unique geographic distribution. Most states, thankfully, only experienced one wave. Many others avoided severe outbreaks altogether. For those that had an outbreak, they were costly in terms of lives lost. By grouping states together according to outbreak--and a fourth group of states that did not experience an outbreak--one can see these outbreaks clearly, and also see just how costly these outbreaks were. ([Click here](#State-groupings) to learn how and why these groups were constructed).
+As the COVID-19 epidemic unfolded in the US over the course of 2020, outbreaks came in waves. These waves were not uniform across the country. Rather, each of the three distinct identifiable waves had its own unique geographic distribution. Most states, thankfully, only experienced one wave. Many others avoided severe outbreaks altogether. For those that had an outbreak, they were costly in terms of lives lost. By grouping states together according to outbreak--and a fourth group of states that did not experience an outbreak--one can see these outbreaks clearly, and also see just how costly these outbreaks were. ([Click here](#SECTION-4:-State-groupings) to learn how and why these groups were constructed).
 
-The four charts below illustrate the outbreaks in different ways. The upper left chart shows daily deaths per 100,000 people for the four different groupings. The upper right chart shows daily new case diagnoses per 100,000 for the same groupings. The lower left chart shows the total new diagnoses made per day. Finally, the lower right chart shows the positive test rate per day. A discussion of these charts and related topics follow. ([Click here](#Large-charts) for larger versions of these charts).
+The four charts below illustrate the outbreaks in different ways. The upper left chart shows daily deaths per 100,000 people for the four different groupings. The upper right chart shows daily new case diagnoses per 100,000 for the same groupings. The lower left chart shows the total new diagnoses made per day. Finally, the lower right chart shows the positive test rate per day. A discussion of these charts and related topics follow. ([Click here](#SECTION-5:-Large-charts) for larger versions of these charts).
 
 <p float="left">
  <img src="img/COVID-deaths-by-outbreak-groupings.png" width = '450'></img>
@@ -55,71 +55,71 @@ Another way to display changes over time is with an animation. Click on the link
 
 [positive test rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/positive-rate-map.html)
 
-### S.1. Outbreak avoidance saves lives
+## Outbreak avoidance saves lives
 
 The chart of death rates shows that states with outbreaks experienced death rates that were many times worse than states with no outbreak over the same time period. The baseline daily death rate stayed below 0.25 per 100,000 if no outbreak was occurring. Death rates were three or more times higher for groupings that were experiencing an outbreak. The cost of an outbreak in terms of lives lost can be extrapolated by comparing the elevated death rate of an outbreak to baseline. For example, the states that experienced a summer outbreak had over 25,000 more deaths above baseline.
 
 Governments and public health agencies are unlikely to drive the death rate down to zero until a vaccine is available, but they can work to avoid an outbreak and the associated costs of lives lost. Clearly, timing is important. By the time death rates start to increase, an outbreak has been many weeks in the making. While the death rate may be the most direct measure of the cost of the pandemic, it's a lagging indicator. Governments and public health agencies need an early warning system--a leading indicator or indicators--in order to have the best chance at keeping the rate of infections, and thus deaths, under control in their jurisdictions.
 
-### S.1. Normalization of the data improves it
+## Normalization of the data improves it
 
 One small but important detail to note is that normalizing the data makes for better comparisons. The chart of *total cases diagnosed per day* isn't as clean of an indicator of an outbreak. Why call this detail out? Because the *total cases diagnosed per day* number is very frequently mentioned in the press, but it has potential to be misleading. Total cases diagnosed per day is often *the first* statistic cited by the press, regardless of how much the availability of testing has changed and continues to change.
 
 In *total cases diagnosed per day* graph, the trendline of total cases diagnosed in the *no outbreak* group rose almost as much as the trendline for the *summer outbreak* group. Yet the *death rate*, which is the measure that matters the most, did not increase correspondingly in the *no outbreak* group. All trendlines rose heading into the fall even though the outbreak (death rate) for the *fall outbreak* group has thus far been more severe. The normalization that occurs in the *case rate* chart more accurately sorts out the true signal. 
 
-### S.1. We learned from the traumatic events of the spring how to reduce adverse outcomes
+## We learned from the traumatic events of the spring how to reduce adverse outcomes
 
 It's informative to compare the peaks in the trendlines between the *death rate* and the *case rate* charts. As one would expect, the peaks of the case rate trendlines happen earlier than the peaks of the death rate trendlines. What is less expected is the differences in their relative sizes. Fortunately, the peak of the summer outbreak death rate was less than half the size as that of the spring outbreak. A likely explanation for some of the difference in death rates is that the medical community learned how to take better care of COVID patients over time. It's also likely that people who were most at risk to adverse outcomes from COVID were infected at lower rates in those places that experienced a summer outbreak than they were in locations that experienced a spring outbreak. It could be that we learned how to take better care of COVID patients and also improved our ability to keep the most vulnerable of us from getting infected with COVID in the first place.
 
 It's also worthwhile noting that the corresponding case rate peak was almost twice as large for the summer outbreak as it was for the spring outbreak. This is clearly due to testing availability.
 
-### S.1. Time is critical to contain an emerging outbreak
+## Time is critical to contain an emerging outbreak
 
 The chart of case rates shows a shared baseline among groups that weren't experiencing an outbreak. The successive outbreaks emerged quickly and rose steeply. The steepness in the slope of the outbreak curves implies that time is critical to contain an emerging outbreak. (Note that although the baseline wasn't uniform and rose a bit over the summer, there was little change in the death rate over that same time period. Much of the increase in case rate might be attributable to the vastly expanded testing availability that occurred during that period and allowed for more cases to be diagnosed). 
 
-## SECTION 2: Time is critical indepth analysis
+# SECTION 2: Time is critical indepth analysis
 
-### S.2. When an outbreak occurs, new active infections increase faster than what the data shows
+## When an outbreak occurs, new active infections increase faster than what the data shows
 
-The curve becomes even more steep if we look at new active infections, and not just those that were confirmed with a diagnosis. Numerous studies point to substantially more people being infected than diagnosed ([Shuchi](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)32009-2/fulltext), [Hicks](https://academic.oup.com/jid/advance-article/doi/10.1093/infdis/jiaa623/5917625), [Gudbjartsson](https://www.nejm.org/doi/full/10.1056/NEJMoa2026116)). The CDC has been conducting seroprevalence surveys (prevalence of antibodies to COVID in blood samples) in people across the country. They provide estimates on their website of the total people who have been infected  compared to the actual number of diagnoses. For states in the northeast with early outbreaks, estimates are around 10 actual cases based on antibody testing for every 1 diagnosed case. For other states with outbreaks that occurred later when testing was more widely avaiable, the numbers are generally around 3-4 actual cases per actual diagnosis ([CDC](https://covid.cdc.gov/covid-data-tracker/#national-lab)).
+The *infections* curve becomes even more steep if we look at new active infections, and not just those that were confirmed with a diagnosis. Numerous studies point to substantially more people being infected than diagnosed ([Shuchi](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)32009-2/fulltext), [Hicks](https://academic.oup.com/jid/advance-article/doi/10.1093/infdis/jiaa623/5917625), [Gudbjartsson](https://www.nejm.org/doi/full/10.1056/NEJMoa2026116)). The CDC has been conducting seroprevalence surveys (prevalence of antibodies to COVID in blood samples) in people across the country. They provide estimates on their website of the total people who have been infected  compared to the actual number of diagnoses. For states in the northeast with early outbreaks, estimates are around 10 actual cases based on antibody testing for every 1 diagnosed case. For other states with outbreaks that occurred later when testing was more widely avaiable, the numbers are generally around 3-4 actual cases per actual diagnosis ([CDC](https://covid.cdc.gov/covid-data-tracker/#national-lab)).
 
 We can use a conservative estimate of 2.5 infections for every diagnosis to get a picture of just how steep the actual infections curve looks (2.5 times steeper to be precise). The green trendlines below show estimates of new active infections for several states superimposed on graphs of diagnosed case rates.
 
 <img src="img/case-rate-and-est-infections.png" style="width:100%">
 
-### S.2. Old news is not good news
+## Old news is not good news
 
 The vast majority of positive cases (i.e. the numerator in all COVID monitoring metrics) comes from diagnostic tests of people who are symptomatic. Does reliance on confirmatory diagnostic tests add delay? People who become infected with COVID are thought to be shedding virus on average 2-3 days before they're symptomatic, if they're ever symptomatic ([Harvard](https://www.health.harvard.edu/diseases-and-conditions/if-youve-been-exposed-to-the-coronavirus)). Once symptomatic, they then need to decide to get tested, get tested (probably depends on the severity of the infection--it could range from 1 day to never), and await for the test results to find their way to the tracking system (which can be from 1 to several days). Simply adding up these numbers suggests that a positive test result from a symptomatic person could take 6 or more days from active, detectable infection to when it enters a tracking database. The infection estimates in the previous time series were shifted back 6 days to simulate when the new infections first became detectable. There's good reason to believe the actual delay is worse than that.
 
 Is there a test regimen and test process system that could shorten this delay from detectability? Many universities are utilizing surveillance systems where they're going looking for active infections and not waiting until they show up. Further discussion of this approach at the state level can be found [here](https://github.com/salvir1/part-2-covid-early-warning-system).
 
-### S.2. Noisy data adds delay
+## Haphazardly mixing two very different test populations into one dataset adds uncertainty
 
 COVID testing regimens have been designed for other reasons than to provide a statistically accurate measure of the changing rate of infection in a population. For example, clinics may do pre-procedural testing to confirm the absence of COVID. Positive test rates from these screening procedures will mirror disease prevalence among asymptomatic people with rates of 1-2% or lower. These clinics may perform these tests only a few days a week. On the other hand, locations run by public health agencies may be testing mostly symptomatic people. These diagnostic tests may have positive test rates from these sites on these days may exceed 25% or more. States report all submitted test reports in a single batch for a day regardless of whether they were screening tests or diagnostic tests. The ratio of screening tests to diagnostic tests can fluctuate significantly from day-to-day. Consequently, the ratio of symptomatic to asymptomatic people in a batched daily test report for a state can--and does--vary tremendously. 
 
-Another layer of noise is introduced when test samples are processed at the labs and reported back. Test sites across a state may utilize different labs. Turnaround times for the various labs are often different. Some labs may batch tests and report several days worth of results at a time, where others report every 24 hours. Not only could this lack of process affect the ratio of symptomatic to asymptomatic people in a batched daily test report, it can have a big impact on the total number of tests reported on in any given day. Taken together, the fluctuating ratios of symptomatic to asymptomatic people in the test pool and the different batching methods contribute to noisiness in the signal from day-to-day. This noisiness makes it hard to see from the data what is actually going on with infection rates in the community.
+Another layer of noise is introduced when test samples are processed at the labs and reported back. Test sites across a state may utilize different labs. Turnaround times for the various labs are often different. Some labs may batch tests and report several days worth of results at a time, where others report every 24 hours. Not only could this lack of process affect the ratio of symptomatic to asymptomatic people in a batched daily test report, it can have a big impact on the total number of tests reported on in any given day. Taken together, the fluctuating ratios of symptomatic to asymptomatic people in the test pool *with their different mean rates* and the different batching methods contribute to noisiness in the signal from day-to-day. The uncontrolled mixing of two distinct test populations--diagnostic and screening--into one dataset makes it hard to see from the data what is actually going on with infection rates in the community.
 
-The high daily variability is clearly visible in COVID metrics in use today. The positive test rate and case rate charts for several states are below on the left. Note the day-to-day variability. The charts on the right show trendlines of the coefficients of variation for the data in the charts on the left. The coefficient of variation is a standard deviation expressed as a ratio of the mean. For example, a coefficient of variation of 0.5 would mean that a single standard deviation is 50% of the mean. The higher the coefficient of variation, the more variable the data. The trendlines were constructed by computing the coefficient of variation for a given day from the prior 45 days worth of data. A large and wandering coefficient of variation makes it hard to draw inferences from new data as it comes in. All of the coefficient of variation trendlines are large and wandering, but the positive test rate trendlines appear to be a bit worse. It makes it a less attractive signal.
+The high daily variability is clearly visible in COVID metrics in use today. The positive test rate and case rate charts for several states are below on the left. Note the day-to-day variability. The charts on the right show trendlines of the coefficients of variation for the data in the charts on the left. The coefficient of variation is a standard deviation expressed as a ratio of the mean. For example, a coefficient of variation of 0.5 would mean that a single standard deviation is 50% of the mean. The higher the coefficient of variation, the more variable the data. The trendlines were constructed by computing the coefficient of variation for a given day from the prior 45 days worth of data. A large and wandering coefficient of variation makes it hard to draw inferences from new data as it comes in. If a new datapoint appears to be different than previous points, has the underlying mean of the process changed or has the variation changed? All of the coefficient of variation trendlines are large and wandering, but the positive test rate trendlines appear to be a bit worse. It makes it a less attractive signal.
 
 <img src="img/coefficient-of-variation-analysis.png" style="width:100%">
 
-### S.2. A final look at timing
+## A final look at timing
 
 Many state governments and public health agencies pay close attention to the daily updates of their COVID metrics, but the delays and noisiness of the data outlined above hinder the ability of their COVID monitoring systems to detect an outbreak in a timely and accurate fashion. This is all the more challenging since state governments are also battling pandemic fatigue and don't want to cry wolf unless they need to. 
 
-Here are charts from several states working hard to strike the right balance. Lines have been added to indicate when they notified the public of what they viewed to be a concerning rise in cases this fall. In some cases the estimated new infections rate had already started rising steadily by the time notification occurs. In the case of Washington state, notification occurs after the trend had been rising from a low baseline. The state government could see diagnoses rising in some parts of the state. 
+Here are charts from several states working hard to strike the right balance. These graphs have all been scaled to have the same y-axis scale. Lines have been added to indicate when they notified the public of what they viewed to be a concerning rise in cases this fall. In some cases the estimated new infections rate had already started rising steadily by the time notification occurs. In the case of Washington state, the baseline is much lower than the other states. The governor issued a notification to the public about an emerging outbreak after noticing diagnoses rising in some parts of the state.
 
-In all cases, new infections started or continued their rise after public notice. The notice didn't appear to have the desired affect. Why aren't governments responding effectively? This is an important area for further consideration. Here's one thought. In an environment of pandemic fatigue, could it be that governments don't have enough trust in the accuracy of their COVID early warning system signals to be more decisive in their responses? Without a clear, decisive signal, do they end up playing a wait and see game until things are cleary worse? 
+In the cases of the three states with clear and concerning outbreaks, new infections started or continued their rise after public notice. The notice didn't appear to have the desired affect. Why aren't governments responding effectively? This is an important area for further consideration. Here's one thought. In an environment of pandemic fatigue, could it be that governments don't have enough trust in the accuracy of their COVID early warning system signals to be more decisive in their responses? Without a clear, decisive signal, do they end up playing a wait and see game until things are cleary worse? 
 
 <img src="img/COVID-infections-and-cases-with-response.png" width = '1000'></img>
 
-## SECTION 3: Case rate threshhold analysis
+# SECTION 3: Case rate threshhold analysis
 
-The [State groupings](#State-groupings) section identified a key threshhold between states that didn't experience an outbreak over a time period and those that did. Once testing was no longer rationed like it was in the early months of the epidemic, states that experienced outbreaks had peak case rates above 30 per 100,000. Only one state, Tennessee, briefly had a case rate above 30 without a corresponding death rate above 0.40 deaths per 100,000. 
+The four charts in the previous section all share a common characteristic. During the month of August case rates stayed below 20 cases per 100,000 and no state experienced an outbreak. This held true for other states as well. The [State groupings](#SECTION-4:-State-groupings) section identified a key threshhold between states that didn't experience an outbreak over a time period and those that did. Once testing was no longer rationed like it was in the early months of the epidemic, states that experienced outbreaks had **peak** case rates above 30 per 100,000. Only one state, Tennessee, briefly had a peak case rate above 30 without a corresponding death rate above 0.40 deaths per 100,000. 
 
-Although it's hard to compare case rates between states given that the sources of data that go into the case rate aren't controlled properly to make accurate statistical comparisons, a single number that has thus far told the story across nearly every state suggests that there *is* an underlying real threshhold, and 30 cases per 100,000 per day is a reasonable approximation for it given the data limitations. 
+Although it's hard to compare case rates between states given that the sources of data that go into the case rate aren't controlled properly to make accurate statistical comparisons, a single number that has thus far told the story across nearly every state suggests that there *is* an underlying real threshhold, and a **peak** of 30 cases per 100,000 per day is a reasonable approximation for it given the data limitations. This would relate directly to **R0**, the basic reproduction number that determines how fast an infectious disease is reproducing. 
 
-Here's another approach that arrives at a case rate threshhold--this time looking at *average* case rate over the summer instead of peak case rate. For this analysis, a k-means algorithm was used to identify the summer outbreak states to minimize subjective bias. The following graph plots average case rates and average death rates by state for the summer months. There is clear separation between the outbreak states in yellow and the no outbreak states in blue. All but one of the *no outbreak* states had average case rates below 20 per 100,000. 
+Here's another approach that arrives at a case rate threshhold--this time looking at **average** case rate over the summer instead of peak case rate. For this analysis, a [*k-means clustering algorithm*](https://en.wikipedia.org/wiki/K-means_clustering) was used to identify the summer outbreak states to minimize subjective bias. The following graph plots average case rates and average death rates by state for the summer months. There is clear separation between the outbreak states in yellow and the no outbreak states in blue. All but one of the *no outbreak* states had **average** case rates below 20 per 100,000. 
 
 <img align="center" src="img/summer-severity-scatter.png" width='600' height='auto' ></img>
 
@@ -131,7 +131,7 @@ A comparison of the respective means shows a clear difference between the *no ou
 | Outbreak       |     24.2       |      0.49       |
 
 
-## State groupings
+# SECTION 4: State groupings
 
 How were these groupings made? A retrospective analysis of daily COVID case and death by state for the US was conducted for data from 3/10/20 to 10/15/20. Over this time, three distinctly timed outbreaks swept through different parts of the country. States were grouped into one of these three outbreak categories or a fourth *no outbreak* category if they did not experience an outbreak during this time.
 
@@ -183,7 +183,7 @@ The state-level charts reveal the dangerous acceleration of a COVID outbreak mor
 
 [Click to return to narrative section](#SECTION-1:-State-groupings-bring-important-trends-to-light)
 
-## Large charts
+# SECTION 5: Large charts
 
 <img align="center" src="img/COVID-deaths-by-outbreak-groupings.png" width='1000' height='auto' ></img>
 
