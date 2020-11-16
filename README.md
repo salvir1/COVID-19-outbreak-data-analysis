@@ -107,7 +107,7 @@ The mixing of these two populations invalidates statistical comparisons along th
 
 <img src="img/coefficient-of-variation-analysis.png" style="width:100%">
 
-Here's another way to see the lack of stationarity in the variation. The following charts show the *case rate* time series for the state of Washington (through mid November 2020) deconstructed into trend, seasonal, and residual components. The residual components whould look randomly distributed if the data adhered to stationarity principles, but it clearly doesn't.
+Here's another way to see the lack of stationarity in the variation. The following charts show the *case rate* time series for the state of Washington (through mid November 2020) deconstructed into trend, seasonal, and residual components. The residual components would look randomly distributed if the data adhered to stationarity principles, but they clearly don't.
 
 <img src="img/COVID-time-series-deconstruction.png" style="width:100%">
 
