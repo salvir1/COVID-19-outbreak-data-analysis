@@ -49,7 +49,7 @@ The four charts below illustrate the outbreaks in different ways. The upper left
 
 Another way to display changes over time is with an animation. Animations of the weekly changes by state for death rate, case rate, and positive test rate [can be found here.](https://public.tableau.com/profile/rob.salvino#!/vizhome/COVIDweeklyanimations/COVID-19WeeklyStatisticsbyState)
 
-(Similar animations were created in Plotly. These animations will not run in a Github repo dur to the limitations of this version of markdown language. The Tableau versions are easier to access, but if you insist on the Plotly versions then copy the following html files to a local folder and then open them to see the animation ([death rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/death-rate-map.html), [case rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/case-rate-map.html), [positive test rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/positive-rate-map.html) ).
+Similar animations were created in Plotly. These animations will not run in a Github repo dur to the limitations of this version of markdown language. The Tableau versions are easier to access, but if you insist on the Plotly versions then copy the following html files to a local folder and then open them to see the animation ([death rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/death-rate-map.html), [case rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/case-rate-map.html), [positive test rate animation](https://github.com/salvir1/outbreak-vs-uptick/blob/main/img/positive-rate-map.html) ).
 
 ## Outbreak avoidance saves lives
 
